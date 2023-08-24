@@ -12,11 +12,11 @@ subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'datetime'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'healpy'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'ligo.skymap==1.0.6'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'utm'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'h5py'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'numexpr'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tables'])
 # skymaps
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'matplotlib==3.6.0'])
-# GUI
-#subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tk'])
-#subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'PIL'])
 
 # folders
 os.mkdir("datasets")
