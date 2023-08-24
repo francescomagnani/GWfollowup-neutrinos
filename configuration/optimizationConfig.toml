@@ -1,0 +1,26 @@
+NAME="ARCA_GW"
+DETECTOR="ARCA"
+DETID=[133]
+INPUT_DIR= "./alerts"
+OUTPUT_DIR="./results"
+DATA_DIR = "./datasets/simulations_5-18Dec2022.h5"
+TIMEWINDOWS=[["-500 second", "500 second"], ["-500 second", "24 hour"]]
+TIMEWINDOW_BKG=["-2 week", "-500 second"]
+ANGULAR_EXTENSION=2
+SIGNAL_lvt = 1000
+BKG_lvt = 1074670.1001629233
+
+[VARIABLES]
+bdt_score = [-5,-0.3,-0.1,-0.1,0.1,"<","log10"] # < bc muon probabilities; set > for nu prob
+fitinf3 = [50,50,200,1000,50,">","nolog"]
+likelihood = [100,100,300,750,25,">","nolog"]
+fitinf10 = [200,300,550,950,25,">","nolog"]
+
+[GENERAL]
+probability_startingpoint = 1
+probability_optimizationorder = 1
+linearity = 1
+modality = "condition"
+stop = 0.9973072703700011
+mod = "normal" # boost_cut, or whatever (else will be ">" only; boost_cut will be ">=")
+mod2 = "offline"
