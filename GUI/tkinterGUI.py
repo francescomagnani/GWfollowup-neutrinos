@@ -50,10 +50,6 @@ class tkGUI:
 
 
     def set_display(self,configu,iteratio):
-        # clear frame (if previous run)
-        for widgets in self.root.winfo_children():
-            widgets.destroy()
-        tkGUI(configu,iteratio)
         # read file
         filename = filedialog.askopenfilename()
         print("\n")
