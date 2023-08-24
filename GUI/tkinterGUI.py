@@ -9,7 +9,7 @@ import selection.optimization
 class tkGUI:
     def __init__(self,conn,itt):
         self.root = tk.Tk()
-        self.root.attributes('-fullscreen', True)
+        #self.root.attributes('-fullscreen', True)
         self.root.geometry("800x700")
         self.root.title("F.Magnani GW follow-up")
         Grid.rowconfigure(self.root, 0, weight=1)
