@@ -19,10 +19,10 @@ Therefore, I strongly suggest to create an Ubuntu 20.4 virtual machine (Desktop 
 0. XXXX of free memory.
 1. Before to install any library do: "sudo apt update", "sudo apt upgrade", and if needed also "sudo apt autoremove"
 2. Python3.8.10 installed. Your Python version should already have the following libraries installed: sys, os, subprocess, operator, itertools, random, time, and math.
-3. Install three more libraries: astropy "sudo apt-get install python3-astropy",
-                                 PIL "sudo apt-get install python3-pil.imagetk",
-                                 tkinter "sudo apt-get install python3.10-tk" [10MB].
-5. Install pip "sudo apt install python3-pip" [199MB], and update it "pip install --upgrade pip" (I work with python3-pip23.1.2)
+3. Install three more libraries: astropy "sudo apt-get install python3-astropy" [270MB],
+                                 PIL "sudo apt-get install python3-pil.imagetk" [19kb],
+                                 tkinter "sudo apt-get install python3-tk" [10MB].
+5. Install pip "sudo apt install python3-pip" [30MB], and update it "pip install --upgrade pip" (I work with python3-pip23.1.2)
 6. With Ubuntu 20.4 there is a problem with OpenSSL and cryptography packages. Remove OpenSSL packages manually:
      			sudo rm -rf /usr/local/lib/python3.8/dist-packages/OpenSSL
 			   sudo rm -rf /usr/local/lib/python3.8/dist-packages/pyOpenSSL...
