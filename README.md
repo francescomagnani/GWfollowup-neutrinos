@@ -15,8 +15,9 @@ The software has been tested on Linux machines, with python3.x versions. For oth
 
 # Prerequisites
 1. Python3.x installed, not older. 
-2. Your Python version should already have the following libraries installed: sys, os, subprocess, operator, itertools, random, time, math, PIL, and tkinter (sudo apt-get install python3.10-tk, 10MB). If not present, please install them.
-3. XXXX of free memory
+2. Your Python version should already have the following libraries installed: sys, os, subprocess, operator, itertools, random, time, math, PIL, and tkinter (sudo apt-get install python3.10-tk, [10MB]). If not present, please install them.
+3. pip installed: sudo apt install python3-pip [199MB]
+4. XXXX of free memory
    
 # How to install and start the application
 1. Download the GitHub repository. For memory reasons, the simulation dataset of the events that are used by the application has been uploaded on the drive. Download and save it in the "datasets" folder: https://drive.google.com/file/d/1Vh-vh0Ph1sfnGNVSEv5OiO5FMQJxKSUz/view?usp=drive_link
