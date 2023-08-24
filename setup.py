@@ -11,6 +11,7 @@ subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'datetime'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'healpy'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'ligo.skymap==1.0.6'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'astropy==5.1'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'utm'])
 # skymaps
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'matplotlib==3.6.0'])
 # GUI
