@@ -16,8 +16,8 @@ The software has been tested on Ubuntu 20.04 with python3.8.10. For other config
 Therefore, I strongly suggest to create an Ubuntu 20.4 virtual machine (Desktop ISO image: https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso) or to use the Windows Linux Subsystem (WSL) on Windows machines installing Ubuntu from the play store.
 
 # Prerequisites
-0. XXXX of free memory.
-1. Before to install any library do: "sudo apt update", "sudo apt upgrade", and if needed also "sudo apt autoremove"
+0. Bewteen 500-1000 MB of free memory.
+1. Before installing any library do: "sudo apt update", "sudo apt upgrade", and if needed also "sudo apt autoremove"
 2. Python3.8.10 installed. Your Python version should already have the following libraries installed: sys, os, subprocess, operator, itertools, random, time, and math.
 3. Install three more libraries: astropy "sudo apt-get install python3-astropy" [270MB],
                                  PIL "sudo apt-get install python3-pil.imagetk" [19kb],
