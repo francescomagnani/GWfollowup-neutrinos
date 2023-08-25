@@ -5,8 +5,8 @@ On the 24th of May 2023, the existing network of operating gravitational wave (G
 The aim of O4 is to further understand GW from neutron star mergers as well as to detect GWs emitted by black hole binaries and burst events such as supernovae.
 
 **This is not a software to detect GWs**, instead it exploits the dynamic and powerful tool of Multi-Messenger Astronomy (MMA). MMA is a field of astronomy, which takes advantage of all of the 4 types of cosmic carriers to investigate the cosmos: cosmic rays, photons, neutrinos, and GWs.  
-**This software simulates the behaviour of what will soon become the world's largest neutrino telescope in performing neutrino searches after the emission of a GW alert from LIGO** (Laser Interferometer Gravitational-wave Observatory). The way of working is similar to the procedure adopted within the collaboration: a single 3sigma-significance neutrino event is searched for in a time window of 1000 s around the GW alert arrival time. 
-The analysis is performed entirely in Python, also with the use of a machine learning technique called Binary Decision Tree, as explained in the "Concept" section.
+**This software simulates the behaviour of what will soon become the world's largest neutrino telescope in performing neutrino searches after the emission of a GW alerts by LIGO** (Laser Interferometer Gravitational-wave Observatory). The way of working is to detect a single 3sigma-significance neutrino event in a time window of 1000 s around the GW alert arrival time. 
+The analysis is entirely performed in Python, both with the use of classical and _machine learning_ techniques.
 
 # The Concept
 Performing MMA studies allows one to possibly detect more information regarding the astrophysical system observed, e.g. stars, galaxies, black holes. In particular, the use of neutrino in astronomy is highly profitable since they can escape very dense environment, hence, proving the interiors of exotic objects in the cosmos. Still, no-one has ever detected neutrinos in correspondence of a GW, which would result in a great new discovery.
