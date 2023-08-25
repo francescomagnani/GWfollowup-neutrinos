@@ -45,6 +45,25 @@ Finally, force re-installation of cryptography to the version 38.0.4 (it works f
 
 # Play with the software
 When you start the software the following window will appear.  
-<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="400">
-
-According to the variables selected, the software performs the optimization of a certain number of initial cuts (specified in the _phase space_
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="400">  
+Firstly, click on the **Browse file** button and select one of the three files already present in the _alerts_ folder, from the window that will open. This will allow the software to read and interpret the selected GW alert (one can even upload a ".fits" file of its own).
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/12405692-cf79-497a-ac86-dee850e317dc" width="400">
+Wait for the upload of the picture on the main window. Here are **shown all the down-going events present between December 5 and 18, 2022**.  
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/5145dfcd-1e29-46b9-83d4-1cf9812a119f" width="400">  
+  
+Subsequently, you may define the parameters for the analysis.  
+Select at least one of the optimization variables. Remember that the more the selected variables the higher the execution time. The software will perform cuts on the selected variables iteratively, moving within the ranges specified in the configuration file, i.e. _optimizationConfig.toml_, here also shown:
+- likelihood: [100,750), step = 25
+- tracklength [m]: [200,950), step = 20
+- n. of hits: [50,1000), step = 50
+- bdt score: [log<sub>10</sub>(-5),log<sub>10</sub>(-0.1)), step = 0.1  
+Since some values in these ranges are strong enough to cut all the data present in the dataset (read **The Concept** section to understand why strong cuts are needed), the algorithm will start the selection by cutting on safer ranges, which will then be optimized on the broader ranges above. The safe ranges are shown below:
+- likelihood: [100,300)
+- tracklength: [300,550)
+- n. of hits: [50,200)
+- bdt score: [log<sub>10</sub>(-0.3),log<sub>10</sub>(-0.1))
+  
+Finally, to make the algorithm faster, one can set the _phase space_ and _order_ parameters accordingly. The first one tells the software which is the fraction of values to be considered among the safe ranges. If _phase space_ = 1, all the values in the safe ranges will be considered; if _phase space_ = 0.5 only half of them will be used. The _order_ parameter tells the software in which order the variables will be optimized. If _order_ = 1, all the possible orders will be considered, e.g. with 2 variables the orders are 2: first variable A, then B; or vice-versa; if _order_ = 0.5 only the order _variable A then variable B_ will be considered.  
+  
+At this point you are ready to start the software by pressing the **Start** button. At the end of the optimization, the image will be updated **showing only the events present in a 1000 s window around the GW event** after the cuts.
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/e598754e-1126-44d8-9c65-0016641dfeb7" width="400">
