@@ -9,9 +9,9 @@ The aim of O4 is to further understand GW from neutron star mergers as well as t
 The analysis is entirely performed in Python, both with the use of classical and _machine learning_ techniques.
 
 # The Concept
-Performing MMA studies allows one to possibly detect more information regarding the astrophysical system observed, e.g. stars, galaxies, black holes. In particular, the use of neutrino in astronomy is highly profitable since they can escape very dense environment, hence, proving the interiors of exotic objects in the cosmos. Still, no-one has ever detected neutrinos in correspondence of a GW, which would result in a great new discovery.
+Performing MMA studies allows one to possibly detect more information regarding the astrophysical system observed, e.g. stars, galaxies, black holes. In particular, the use of neutrino in astronomy is highly profitable since they can escape very dense environments due to their low cross-section, hence, proving the interiors of exotic objects in the cosmos. Still, no-one has ever detected neutrinos in correspondence of a GW.
 
-Therefore, we exploit the power of an underwater neutrino telescope to perform what is called the GW follow-up, i.e. the search for neutrinos after a GW event. 
+Therefore, here I exploit the power of an underwater neutrino telescope to perform what is called the **GW follow-up**, i.e. the search for neutrinos after a GW event. 
 Usually, neutrino telescopes perform analyses with neutrino candidates coming from _under_ the experiment (the _up-going sky_), i.e. particles which have traversed Earth. This choice is justificated by the extremely high atmospheric muon contamination, which is instead suppressed by the Earth's thickness. The problem of atmospheric muons is that they enter the detector and leave a similar track to that of neutrino events.
 Here, instead, **I** wanted to **perform GW follow-up with events coming from _above_ the experiment** (the _down-going sky_), i.e. events which have crossed the Earth's atmosphere and approximately 3 km of water to reach the detector on the seabed. This would increase the visibility of the detector and help to investigate sources which pass from the up-going to the down-going sky in the moment of the emission (_transient sources_), hence are difficult to study.
 
