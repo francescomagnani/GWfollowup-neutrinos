@@ -83,5 +83,5 @@ After the fit to 23262850 events, of which 7154402 are neutrinos and 16108448 mu
 - Muon test accuracy = 98%  
 - Neutrino test accuracy = 96%
 
-The confusion matrix is shown below:
+The confusion matrix is shown below:  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/6940214f-c3a4-455b-9011-8fbe0abfe96f" width="400">
