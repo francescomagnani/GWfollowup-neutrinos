@@ -31,11 +31,11 @@ Therefore, I strongly suggest to create an Ubuntu 20.4 virtual machine (Desktop 
 	+ _tkinter_: <sup>sudo apt-get install python3-tk<sup>.
 5. Install _pip_ <sup>sudo apt install python3-pip</sup>, and update it with <sup>pip install --upgrade pip</sup> (I work with _python3-pip23.1.2_)
 6. In the case OpenSSL and cryptography packages are already installed in your Python version, you might have a problem with the installation of the software. Please, remove _OpenSSL_ packages manually:
-+ <sup>sudo rm -rf /usr/local/lib/python3.8/dist-packages/OpenSSL</sup>
-+ <sup>sudo rm -rf /usr/local/lib/python3.8/dist-packages/pyOpenSSL...VERSION...</sup>
-+ <sup>sudo rm -rf /home/YOU/.local/lib/python3.8/site-packages/OpenSSL</sup>
-+ <sup>sudo rm -rf /home/YOU/.local/lib/python3.8/site-packages/pyOpenSSL...VERSION...</sup>
-Then re-install _OpenSSL_ (version 22.0.0 works for me): <sup>pip install pyOpenSSL==22.0.0</sup>
+	+ <sup>sudo rm -rf /usr/local/lib/python3.8/dist-packages/OpenSSL</sup>
+	+ <sup>sudo rm -rf /usr/local/lib/python3.8/dist-packages/pyOpenSSL...VERSION...</sup>
+	+ <sup>sudo rm -rf /home/YOU/.local/lib/python3.8/site-packages/OpenSSL</sup>
+	+ <sup>sudo rm -rf /home/YOU/.local/lib/python3.8/site-packages/pyOpenSSL...VERSION...</sup>  
+Then re-install _OpenSSL_ (version 22.0.0 works for me): <sup>pip install pyOpenSSL==22.0.0</sup>  
 Finally, force re-installation of cryptography to the version 38.0.4 (it works fine): <sup>pip install --force-reinstall "cryptography==38.0.4"</sup>
    
 # How to install and start the software
