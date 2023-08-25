@@ -44,7 +44,7 @@ Finally, force re-installation of cryptography to the version 38.0.4 (it works f
 # Play with the software
 When you start the software the following window will appear.  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="400">  
-Firstly, click on the **Browse file** button and select one of the three files already present in the _alerts_ folder, from the window that will open. This will allow the software to read and interpret the selected GW alert (one can even upload a ".fits" file of its own).
+Firstly, click on the **Browse file** button and select one of the three files already present in the _alerts_ folder, from the window that will open. This will allow the software to read and interpret the selected GW alert (one can even upload a ".fits" file of its own).  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/12405692-cf79-497a-ac86-dee850e317dc" width="400">
 Wait for the upload of the picture on the main window. Here are **shown all the down-going events present between December 5 and 18, 2022**.  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/5145dfcd-1e29-46b9-83d4-1cf9812a119f" width="400">  
