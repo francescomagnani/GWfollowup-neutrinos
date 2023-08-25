@@ -44,8 +44,7 @@ Finally, force re-installation of cryptography to the version 38.0.4 (it works f
 4. Now you're ready to start the application. Inside the main folder digit: <sup>python3.x GWfollowup.py --config configuration/optimizationConfig.toml --iter 0</sup>
 
 # Play with the software
-When you start the software the following window will appear.
-<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="50">
-![app1](https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480)
+When you start the software the following window will appear.  
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="400">
 
 According to the variables selected, the software performs the optimization of a certain number of initial cuts (specified in the _phase space_
