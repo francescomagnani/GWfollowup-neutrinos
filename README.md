@@ -68,4 +68,7 @@ Finally, to make the algorithm faster, one can set the _phase space_ and _order_
 Recommendation: for single variable selections use _phase space_ >= 0.5 and _order_ = 1.
   
 At this point you are ready to start the software by pressing the **Start** button. At the end of the optimization, the image will be updated **showing only the events present in a 1000 s window around the GW event** after the cuts.
-<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/e598754e-1126-44d8-9c65-0016641dfeb7" width="400">
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/e598754e-1126-44d8-9c65-0016641dfeb7" width="400">  
+Do not worry in case you do not see any surviving event, remember: no-one has ever detected a neutrino in corrispondence with a GW so far... Furthermore, down-going sky analysis are quite a new topic, so no greater advances have been made.  
+
+Last but not least, all the results of the selections performed by the algorithm and the images are saved in the _reuslts_ folder, where you may access to more information than those shown in the GUI. For example, the selection results are shown for each declination band of the GW event showing the best cut found, the expected background, and whether the 3sigma significance has been satisfied.
