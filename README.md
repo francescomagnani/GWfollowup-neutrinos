@@ -65,6 +65,7 @@ Since some values in these ranges are strong enough to cut out all the data pres
 - bdt score: [log<sub>10</sub>(-0.3),log<sub>10</sub>(-0.1)), step = 0.1
   
 Finally, to make the algorithm faster, one can set the _phase space_ and _order_ parameters accordingly. The first one tells the software which is the fraction of values to be considered among the safe ranges. If _phase space_ = 1, all the values in the safe ranges will be considered; if _phase space_ = 0.5 only half of them will be used. The _order_ parameter tells the software in which order the variables will be optimized. If _order_ = 1, all the possible orders will be considered, e.g. with 2 variables the orders are 2: first variable A, then B; or vice-versa; if _order_ = 0.5 only the order _variable A then variable B_ will be considered.  
+Recommendation: for single variable selections use _phase space_ >= 0.5 and _order_ = 1.
   
 At this point you are ready to start the software by pressing the **Start** button. At the end of the optimization, the image will be updated **showing only the events present in a 1000 s window around the GW event** after the cuts.
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/e598754e-1126-44d8-9c65-0016641dfeb7" width="400">
