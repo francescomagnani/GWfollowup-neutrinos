@@ -4,8 +4,8 @@ Hi, welcome to this repository created from my master's thesis in Nuclear and Su
 On the 24th of May 2023, the existing network of operating gravitational wave (GW) interferometers LIGO/KAGRA/Virgo started the new data-taking run (the run O4). More info in: https://observing.docs.ligo.org/plan/.
 The aim of O4 is to further understand GW from neutron star mergers as well as to detect GWs emitted by black hole binaries and burst events such as supernovae.
 
-**This is not a software to detect GWs**, instead it exploits the dynamic and powerful tool of Multi-Messenger Astronomy (MMA). MMA is a field of astronomy, which takes advantage of all the 4 types of cosmic carriers to investigate the cosmos: cosmic rays, photons, neutrinos, and GWs.
-**This software** simulates the behaviour of what will soon become the world's largest neutrino telescope in performing neutrino searches after the emission of a GW alert from LIGO (Laser Interferometer Gravitational-wave Observatory). The way of working is similar to the procedure adopted within the collaboration: a single 3sigma-significance neutrino event is searched for in a time window of 1000 s around the GW alert arrival time. 
+**This is not a software to detect GWs**, instead it exploits the dynamic and powerful tool of Multi-Messenger Astronomy (MMA). MMA is a field of astronomy, which takes advantage of all of the 4 types of cosmic carriers to investigate the cosmos: cosmic rays, photons, neutrinos, and GWs.  
+**This software simulates the behaviour of what will soon become the world's largest neutrino telescope in performing neutrino searches after the emission of a GW alert from LIGO** (Laser Interferometer Gravitational-wave Observatory). The way of working is similar to the procedure adopted within the collaboration: a single 3sigma-significance neutrino event is searched for in a time window of 1000 s around the GW alert arrival time. 
 The analysis is performed entirely in Python, also with the use of a machine learning technique called Binary Decision Tree, as explained in the "Concept" section.
 
 # The Concept
