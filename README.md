@@ -56,8 +56,9 @@ Select at least one of the optimization variables. Remember that the more the se
 - likelihood: [100,750), step = 25
 - tracklength [m]: [200,950), step = 20
 - n. of hits: [50,1000), step = 50
-- bdt score: [log<sub>10</sub>(-5),log<sub>10</sub>(-0.1)), step = 0.1  
-Since some values in these ranges are strong enough to cut all the data present in the dataset (read **The Concept** section to understand why strong cuts are needed), the algorithm will start the selection by cutting on safer ranges, which will then be optimized on the broader ranges above. The safe ranges are shown below:
+- bdt score: [log<sub>10</sub>(-5),log<sub>10</sub>(-0.1)), step = 0.1
+
+Since some values in these ranges are strong enough to cut all the data present in the dataset (read **The Concept** section to understand why strong cuts are needed), the algorithm will start the selection by cutting on safer ranges, which will then be optimized on the wider ranges above. The safe ranges are shown below:
 - likelihood: [100,300)
 - tracklength: [300,550)
 - n. of hits: [50,200)
