@@ -75,20 +75,13 @@ Last but not least, all the results of the selections performed by the algorithm
 
 # The BDT model
 An _xgboost_ BDT has been trained through the _RandomizedSearchCV_ method of _sklearn_ library. The optimization ran over a total of 23262849 events, of which 16108448 were atmospheric muons and 7154401 neutrinos (comprising both atmospheric and cosmic neutrinos). Since the dataset is imbalanced due to the greater presence of muon events, a weight = 16108448/7154401 $\approx$ 2.25, has been applied to the neutrino events. The best model optimization found is shown below:  
-bdtmodel = XGBClassifier(  
-	- base_score=0.5, booster='gbtree', callbacks=None,
-	- colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
-        - early_stopping_rounds=None, enable_categorical=False,
-        - eval_metric=None, gamma=4.25, gpu_id=-1, grow_policy='depthwise',
-        - importance_type=None, interaction_constraints='',
-        - learning_rate=0.25, max_bin=256, scale_pos_weight = 2.2515439099, max_cat_to_onehot=4,
-        - max_delta_step=8, max_depth=7, max_leaves=0, min_child_weight=4,
-        - min_split_loss=4.25, monotone_constraints='()',
-        - n_estimators=100, n_jobs=0, num_parallel_tree=1, predictor='auto',
-        - random_state=0, reg_alpha=0)  
+
+_bdtmodel = XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None, colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1, early_stopping_rounds=None, enable_categorical=False, eval_metric=None, gamma=4.25, gpu_id=-1, grow_policy='depthwise', importance_type=None, interaction_constraints='', learning_rate=0.25, max_bin=256, scale_pos_weight = 2.2515439099, max_cat_to_onehot=4, max_delta_step=8, max_depth=7, max_leaves=0, min_child_weight=4, min_split_loss=4.25, monotone_constraints='()', n_estimators=100, n_jobs=0, num_parallel_tree=1, predictor='auto', random_state=0, reg_alpha=0)_  
+
 The function used to evaluate the score is the ROC curve (_roc_auc_).  
 After the fit to 23262850 events, of which 7154402 are neutrinos and 16108448 muons:  
 - Muon test accuracy = 98%  
-- Neutrino test accuracy = 96%  
+- Neutrino test accuracy = 96%
+
 The confusion matrix is shown below:
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/6940214f-c3a4-455b-9011-8fbe0abfe96f" width="400">
