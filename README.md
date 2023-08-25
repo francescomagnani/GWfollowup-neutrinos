@@ -51,7 +51,7 @@ Wait for the upload of the picture on the main window.
 In blu are **shown all the down-going events present between December 5 and 18, 2022**. In red the 50% and 90% containing areas of the GW event. In grey, over the red areas, the so-defined _ON region_: the region from where possible neutrino signals associated to the GW might come. The globe is divided in down-going (darker) and up-going (lighter) skies as seen by the neutrino telescope at the time of the GW event, t<sub>0</sub>.
   
 Subsequently, you may define the parameters for the analysis.  
-<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/11d74290-ba04-459c-b7dd-c04d1cf2fcab" width="200">  
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/11d74290-ba04-459c-b7dd-c04d1cf2fcab" width="400">  
 Select at least one of the optimization variables. Remember that the more the selected variables the higher the execution time. The software will perform cuts on the selected variables iteratively, moving within the ranges specified in the configuration file, i.e. _optimizationConfig.toml_, here also shown:
 - likelihood: [100,750), step = 25
 - tracklength [m]: [200,950), step = 20
