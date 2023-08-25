@@ -54,15 +54,15 @@ Subsequently, you may define the parameters for the analysis.
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/11d74290-ba04-459c-b7dd-c04d1cf2fcab" width="400">  
 Select at least one of the optimization variables. Remember that the more the selected variables the higher the execution time. The software will perform cuts on the selected variables iteratively, moving within the ranges specified in the configuration file, i.e. _optimizationConfig.toml_, here also shown:
 - likelihood: [100,750), step = 25
-- tracklength [m]: [200,950), step = 20
+- tracklength [m]: [200,950), step = 25
 - n. of hits: [50,1000), step = 50
 - bdt score: [log<sub>10</sub>(-5),log<sub>10</sub>(-0.1)), step = 0.1
 
-Since some values in these ranges are strong enough to cut all the data present in the dataset (read **The Concept** section to understand why strong cuts are needed), the algorithm will start the selection by cutting on safer ranges, which will then be optimized on the wider ranges above. The safe ranges are shown below:
-- likelihood: [100,300)
-- tracklength: [300,550)
-- n. of hits: [50,200)
-- bdt score: [log<sub>10</sub>(-0.3),log<sub>10</sub>(-0.1))
+Since some values in these ranges are strong enough to cut out all the data present in the dataset (read **The Concept** section to understand why strong cuts are needed), the algorithm will start the selection by cutting on safer ranges, which will then be optimized on the wider ranges above. The safe ranges are shown below:
+- likelihood: [100,300), step = 25
+- tracklength: [300,550), step = 25
+- n. of hits: [50,200), step = 50
+- bdt score: [log<sub>10</sub>(-0.3),log<sub>10</sub>(-0.1)), step = 0.1
   
 Finally, to make the algorithm faster, one can set the _phase space_ and _order_ parameters accordingly. The first one tells the software which is the fraction of values to be considered among the safe ranges. If _phase space_ = 1, all the values in the safe ranges will be considered; if _phase space_ = 0.5 only half of them will be used. The _order_ parameter tells the software in which order the variables will be optimized. If _order_ = 1, all the possible orders will be considered, e.g. with 2 variables the orders are 2: first variable A, then B; or vice-versa; if _order_ = 0.5 only the order _variable A then variable B_ will be considered.  
   
