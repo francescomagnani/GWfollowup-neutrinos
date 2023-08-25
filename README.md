@@ -74,7 +74,7 @@ Do not worry in case you do not see any surviving event, remember: no-one has ev
 Last but not least, all the results of the selections performed by the algorithm and the images are saved in the _reuslts_ folder, where you may access to more information than those shown in the GUI. For example, the selection results are shown for each declination band of the GW event showing the best cut found, the expected background, and whether the 3sigma significance has been satisfied.  
 
 # The BDT model
-An _xgboost_ BDT has been trained through the _RandomizedSearchCV_ method of _sklearn_ library.  
+An _xgboost_ BDT has been trained through the _RandomizedSearchCV_ method of _sklearn_ library in classifying neutrinos and atmospheric muons, using an overall of 23 variables (among which likelihood, n. of hits, and tracklength).  
 The optimization ran over a total of 23262849 events, of which 16108448 were atmospheric muons and 7154401 neutrinos (comprising both atmospheric and cosmic neutrinos). Since the dataset is imbalanced due to the greater presence of muon events, a weight = 16108448/7154401 $\approx$ 2.25 (the _scale_pos_weight_ parameter below), has been applied. To reduce the probability of overfitting, cross-validation techniques have been used, in particular, the train dataset has been divided into 5 smaller train dataset (_cv=5_ parameter of _RandomizedSearchCV_).  
 The best model optimization found is shown below:  
 
