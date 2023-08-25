@@ -45,9 +45,10 @@ Finally, force re-installation of cryptography to the version 38.0.4 (it works f
 When you start the software the following window will appear.  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/dd525b37-1379-4f59-8653-b5f3628a7480" width="400">  
 Firstly, click on the **Browse file** button and select one of the three files already present in the _alerts_ folder, from the window that will open. This will allow the software to read and interpret the selected GW alert (one can even upload a ".fits" file of its own).  
-<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/12405692-cf79-497a-ac86-dee850e317dc" width="400">
-Wait for the upload of the picture on the main window. Here are **shown all the down-going events present between December 5 and 18, 2022**.  
+<img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/12405692-cf79-497a-ac86-dee850e317dc" width="400">  
+Wait for the upload of the picture on the main window.  
 <img src="https://github.com/francescomagnani/GWfollowup-neutrinos/assets/75760916/5145dfcd-1e29-46b9-83d4-1cf9812a119f" width="400">  
+In blu are **shown all the down-going events present between December 5 and 18, 2022**. In red the 50% and 90% containing areas of the GW event. In grey, over the red areas, the so-defined _ON region_: the region from where possible neutrino signals associated to the GW might come. The globe is divided in down-going (darker) and up-going (lighter) skies as seen by the neutrino telescope at the time of the GW event, t<sub>0</sub>.
   
 Subsequently, you may define the parameters for the analysis.  
 Select at least one of the optimization variables. Remember that the more the selected variables the higher the execution time. The software will perform cuts on the selected variables iteratively, moving within the ranges specified in the configuration file, i.e. _optimizationConfig.toml_, here also shown:
